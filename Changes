@@ -1,0 +1,78 @@
+Revision history for Perl module Net::SFTP::Foreign::Tempdir::Extract
+
+0.18 2021-07-13
+  - Updates to host on GitHub
+  - Changed License from the Perl (GPL + Artistic) to MIT
+
+0.17 2021-07-13
+  - Updated lib/Net/SFTP/Foreign/Tempdir/Extract/File.pm
+    - Fixed bug where the file->extract method did not support zip files with folder structures
+    - Added test t/004_extract-multi-hierarchy.t
+
+0.16 2021-03-29
+  - Updated lib/Net/SFTP/Foreign/Tempdir/Extract/File.pm - Added die to catch exception when file extension is unknown to Archive::Extract
+
+0.15 2019-05-16
+  - Updated Net::SFTP::Foreign::Tempdir::Extract
+    - Updated options method to expose default value
+    - Added _options_default method to allow easy override in sub class
+    - Added options test
+
+0.14 2018-12-18
+  - Fixed Makefile.PL and spec - version 0.08 replaced Archive::Zip for Archive::Extract - RT 128048 - Slaven
+  - Updated t/004_extract-multi.t to remove hardcoded path
+
+0.13 2018-01-31
+  - Updated lib/Net/SFTP/Foreign/Tempdir/Extract.pm
+    - Clear list cache when change folder or match
+    - Disconnect sftp when change host, port, user, or options
+
+0.12 2015-09-17
+  - Updated lib/Net/SFTP/Foreign/Tempdir/Extract.pm
+    - Added port support
+    - Updated error logging
+  - Added test t/007_port.t
+
+0.11 2015-09-24
+  - Added upload method
+  - Fixed file->extract method
+
+0.10 2015-06-08
+  - Updated documentation
+  - Update match default to qr//
+
+0.09 2015-05-09
+  - Updated SFTP connection error message
+  - Updated backup method documentation
+
+0.08 2014-10-26
+  - Updated File->export method to support all archive formats supported by Archive::Extract
+
+0.07 2014-10-17
+  - Added options property defaulting to ssh -q option to suppress server banner
+  - Updated many double quotes to single quotes for performance
+
+0.06 2014-09-08
+  - Documentation
+
+0.05 2014-08-27
+  - Fixed requirement for Archive::Zip
+  - Added example scripts to distribution
+  
+0.04 2014-08-21
+  - File Object
+    - Refactured to drop use of chdir to support relative zip file names
+    - Added tmp dir for each extracted file to support fine grained cleanup
+  - Updated Documentation
+
+0.03 2014-05-29
+  - Extract Object
+    - Added backup and delete options
+
+0.02 2014-05-29
+  - Fixed namespace issues
+  - Added tests
+  - Added File->export method
+
+0.01 2014-05-29
+  - original version; created by ExtUtils::ModuleMaker 0.51
