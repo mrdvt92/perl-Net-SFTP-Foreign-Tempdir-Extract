@@ -180,11 +180,7 @@ Returns a cached connected [Net::SFTP::Foreign](https://metacpan.org/pod/Net::SF
 
 ## BUGS
 
-Send email to author and log on RT.
-
-## SUPPORT
-
-DavisNetworks.com supports all Perl applications including this package.
+Use GitHub to fork repository and submit pull requests.
 
 ### Testing
 
@@ -261,11 +257,7 @@ Support other archive formats besides zip
 
 ## BUGS
 
-Send email to author and log on RT.
-
-## SUPPORT
-
-DavisNetworks.com supports all Perl applications including this package.
+Use GitHub to fork repository and submit pull requests.
 
 ## AUTHOR
 
